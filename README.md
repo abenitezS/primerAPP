@@ -57,3 +57,17 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+2. Exploración de la estructura.
+   ○ Identificar las carpetas y archivos más importantes:
+   ○ Escribir una breve descripción de la función de cada uno.
+
+src/app : carpeta base de la aplicación con los componentes , modulos y la logica principal ,es el núcleo de la aplicación. Allí se encuentra el módulo principal (AppModule) y el componente raíz (AppComponent).
+
+app.components.ts : es el componente principal, que actúa como contenedor raíz de la aplicación. Este componente se asocia a la etiqueta <app-root> que se encuentra en index.html.Es un archivo de clase TypeScript donde se define la lógica del componente.
+
+app.module.ts: es el módulo raíz (AppModule) que agrupa todos los componentes, servicios y dependencias de la aplicación. A la par, define qué componentes se cargan y qué módulos se importan.
+
+assets/ :carpeta pública para recursos estáticos como imágenes, íconos o fuentes.
+
+environments/: carpeta que contiene archivos de configuración para distintos entornos ( desarrollo , produccion, etc)
