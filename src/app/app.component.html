@@ -1,15 +1,16 @@
 
-      <h1>Hello, {{ title }}</h1>
-      <p>
-        Hola, mi nombre es Alicia y actualmente en mi trabajo estan
+      <h1>Hola, {{ title }}</h1>
+      <p >
+        Mi nombre es Alicia y actualmente en mi trabajo estan
         desarrollando con Angular para migrar sistemas antiguos hechos en forms
-        y plsql de la Contaduria, es sumamente importante aprender de manera
-        correcta a utilizarla ya que seré parte del equipo de desarrollo 
+        y plsql de la Contaduria, es sumamente importante aprender este framework de desarrollo frontend para poder aportar a los proyectos y seguir creciendo profesionalmente.
       </p>
-<h2>variable "nombre" en el componente principal tiene este  valor: {{ nombre }}</h2>
+<h2>variable "nombre"  tiene este  valor:  {{ nombre }}</h2>
 
 <button (click)="cambiarNombre()">
   Cambiar nombre
 </button>
-<h3>Imagen</h3>"
-<img src="/public/assets/foto.jpg" alt="Mi imagen"   > 
+<h3>Imágen</h3>
+<img [src]="imageUrl" alt="foto" width="500" >
+
+<router-outlet />

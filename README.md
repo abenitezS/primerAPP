@@ -1,73 +1,130 @@
-# PrimerAPP
+# Mi Primera App en Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
+## Descripción del proyecto
+Este proyecto fue realizado como práctica inicial de Angular.  
+El objetivo fue aprender a crear una aplicación utilizando Angular CLI, comprender la estructura básica del framework y realizar modificaciones simples en la vista mediante interpolación de variables.
 
-## Development server
+La aplicación incluye:
+- Cambio del título principal.
+- Un párrafo de presentación personal.
+- Uso de interpolación de variables.
+- Imagen agregada desde la carpeta `assets`.
 
-To start a local development server, run:
+---
 
+## Tecnologías utilizadas
+- Angular 21
+- TypeScript
+- HTML
+- CSS
+- Node.js
+- Angular CLI
+
+---
+
+## Estructura principal del proyecto
+
+### `src/app`
+carpeta base de la aplicación con los componentes , modulos y la logica principal ,es el núcleo de la aplicación. Allí se encuentra el módulo principal (AppModule) y el componente raíz (AppComponent).
+
+### `app.component.ts`
+ Archivo que es el componente principal, que actúa como contenedor raíz de la aplicación. Este componente se asocia a la etiqueta <app-root> que se encuentra en index.html.Es un archivo de clase TypeScript donde se define la lógica del componente.
+
+### `app.component.html`
+Plantilla HTML del componente principal.
+
+### `app.module.ts`
+Módulo principal de Angular donde se registran los componentes y configuraciones básicas.
+
+### `assets/`
+Carpeta pública para recursos estáticos como imágenes, íconos o fuentes..
+
+### `environments/`
+Carpeta que contiene archivos de configuración para distintos entornos ( desarrollo , produccion, etc)
+
+
+### `app.module.ts/`
+Es el módulo raíz (AppModule) que agrupa todos los componentes, servicios y dependencias de la aplicación. A la par, define qué componentes se cargan y qué módulos se importan.
+
+
+
+---
+
+## Instalación y ejecución
+
+### 1. Clonar el repositorio
+```bash
+git clone https://github.com/abenitezS/primerAPP.git
+```
+
+### 2. Entrar a la carpeta del proyecto
+```bash
+cd primerAPP
+```
+
+### 3. Instalar dependencias
+```bash
+npm install
+```
+
+### 4. Ejecutar la aplicación
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+### 5. Abrir en el navegador
+Ir a:
 ```bash
-ng generate component component-name
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## Funcionalidades implementadas
 
-## Building
+- Creación del proyecto con Angular CLI.
+- Modificación del título principal.
+- Agregado de texto personalizado.
+- Interpolación de variables en la plantilla.
+- Uso de imágenes desde `assets`.
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## Capturas de pantalla
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### Pantalla principal
+Captura de la aplicación funcionando.
 
-## Running unit tests
+![Captura de pantalla](src/assets/images/Captura1.png)      
+  
+Cuando presiono el boton "Cambiar nombre" cambia la variable "nombre"
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+![Captura de pantalla](src/assets/images/Captura2.png) 
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+## Autor
 
-For end-to-end (e2e) testing, run:
+- Nombre: Alicia Graciela Benitez Samaniego
+- Curso: Angular
+- Unidad: Módulo 1 - Unidad 1
 
-```bash
-ng e2e
-```
+---
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Bibliografía y fuentes
 
-## Additional Resources
+### Documentación en linea
+Angular [Bienvenido al tutorial de Angular]. https://angular.dev/tutorials/learn-angular
+Angular. The Angular CLI. https://angular.dev/tools/cli
+Angular.  Anatomy of a component .https://angular.dev/guide/components
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Libro
+- Freeman, A. *Pro Angular 9*. Apress, 2020.
 
-2. Exploración de la estructura.
-   ○ Identificar las carpetas y archivos más importantes:
-   ○ Escribir una breve descripción de la función de cada uno.
+### Créditos de imágenes
+- Imagen utilizada desde recursos  libres de uso.
+ https://www.magnific.com/es/foto-gratis/codigo-software-computacion-personal-portatil_197081554.htm#fromView=keyword&page=1&position=3&uuid=2dfb358c-dcab-4f6f-981e-21097f7e61cf&query=Angular+web
 
-src/app : carpeta base de la aplicación con los componentes , modulos y la logica principal ,es el núcleo de la aplicación. Allí se encuentra el módulo principal (AppModule) y el componente raíz (AppComponent).
 
-app.components.ts : es el componente principal, que actúa como contenedor raíz de la aplicación. Este componente se asocia a la etiqueta <app-root> que se encuentra en index.html.Es un archivo de clase TypeScript donde se define la lógica del componente.
 
-app.module.ts: es el módulo raíz (AppModule) que agrupa todos los componentes, servicios y dependencias de la aplicación. A la par, define qué componentes se cargan y qué módulos se importan.
 
-assets/ :carpeta pública para recursos estáticos como imágenes, íconos o fuentes.
-
-environments/: carpeta que contiene archivos de configuración para distintos entornos ( desarrollo , produccion, etc)
